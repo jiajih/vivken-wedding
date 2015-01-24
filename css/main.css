@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('/images/pineapple_grey.png'); 
   background-repeat: no-repeat; 
   background-position: center;
-  background-size: 8%;
+  background-size: auto;
 }
 
 .my-block {
