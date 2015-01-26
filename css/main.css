@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'orator';
 }
 
-.nav li:focus, .nav li:active, .nav li: {
+.nav li:active, .nav li: {
   background-color: #367588 !important;
 }
 
@@ -83,6 +83,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav li.active {
   background-color: #eeeeee;
 }
+
+.navbar-nav > li > a:focus {
+  color: #367588;
+  background-color: #eeeeee;
+  text-decoration: none;
+}
+
 
 .voffset  { 
 	margin-top: 100px; 
