@@ -21,6 +21,9 @@ handlers:
 - url: /fonts
   static_dir: fonts
 
+- url: /docs
+  static_dir: docs
+
 - url: /admin
   script: admin.app
   login: admin
