@@ -23,6 +23,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'orator';
+  color: #333;
 }
 
 .container_welcome{
@@ -68,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'orator';
 }
 
-.nav li:focus, .nav li:active, .nav li: {
+.nav li:active, .nav li: {
   background-color: #367588 !important;
 }
 
@@ -76,12 +77,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-.nav a:hover, .nav li.active a {
-  color: #367588;
-}
 
 .nav li.active {
   background-color: #eeeeee;
+}
+
+.nav li.active a{
+  color: #367588;
+}
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navbar-nav > li > a:hover {
+  background-color: #eeeeee;
+  color: #367588;
 }
 
 .voffset  { 
