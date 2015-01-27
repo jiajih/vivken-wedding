@@ -49,8 +49,7 @@ class MainHandler(webapp2.RequestHandler):
   def post(self):
     password = self.request.get('password')
     if password.lower() == 'honolulu':
-      # TODO: Update with real cookie domain
-      self.response.set_cookie('guest', value='true', domain='jonandflora.com')
+      self.response.set_cookie('guest', value='true', domain='coopergetsparents.com')
       template = JINJA_ENVIRONMENT.get_template('index.html')
     else:
       template = JINJA_ENVIRONMENT.get_template('login.html')
