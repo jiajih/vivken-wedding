@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'orator';
 }
 
+.navbar-toggle .icon-bar {
+ background-color: white;
+}
+
 .navbar-custom {
     background-color: #367588;
     font-family: 'orator';
