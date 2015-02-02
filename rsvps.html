@@ -33,6 +33,7 @@
 	  		<tr>
 	  			<th>Date</th>
 	  			<th>Comment</th>
+	  			<th>Hotel</th>
 	  			<th>First name</th>
 	  			<th>Last name</th>
 	  			<th>Attending?</th>
@@ -46,6 +47,7 @@
 							{% if loop.first %}
 								<td rowspan="{{ loop.length }}">{{ result[0].created }}</td>
 								<td rowspan="{{ loop.length }}">{{ result[0].comment }}</td>
+								<td rowspan="{{ loop.length }}">{{ result[0].hotel }}</td>
 							{% endif %}
 							<td>{{ guest.first_name }}</td>
 							<td>{{ guest.last_name }}</td>

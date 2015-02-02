@@ -28,6 +28,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 
 class Rsvp(ndb.Model):
   comment = ndb.TextProperty()
+  hotel = ndb.TextProperty()
   created = ndb.DateTimeProperty(auto_now_add=True)
 
 class Guest(ndb.Model):
@@ -59,6 +60,7 @@ class RsvpHandler(webapp2.RequestHandler):
   def post(self):
     rsvp = Rsvp()
     rsvp.comment = self.request.get('comment')
+    rsvp.hotel = self.request.get('hotel')
     rsvp_key = rsvp.put()
 
     arguments = self.request.arguments()

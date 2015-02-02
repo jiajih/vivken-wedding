@@ -51,6 +51,7 @@ $('document').ready(function() {
   			}
   		}
   	});
+    data.hotel = $('form .hotel').val();
   	data.comment = $('form textarea').val();
 
   	$.post('/rsvp', data, function() {
@@ -78,6 +79,12 @@ $('document').ready(function() {
           }
         }
       });
+      var $hotelInput = $('form .hotel');
+      var hotel = $hotelInput.val();
+      var $hotelInputContainer = $hotelInput.parent();
+      $hotelInput.remove();
+      $hotelInputContainer.append($('<span>' + hotel + '</span>'));
+
       var $textArea = $('form textarea');
       var comment = $textArea.val();
       var $textAreaContainer = $textArea.parent();
