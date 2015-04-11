@@ -37,6 +37,7 @@ $('document').ready(function() {
   			var firstName = $(this).find('.first-name').val();
   			var lastName = $(this).find('.last-name').val();
   			var attending = $(this).find('.attending').val() == 'Yes';
+        var shuttle = $(this).find('.shuttle').val() == 'Yes';
         var attendingBeach = $(this).find('.attending-beach').val() == 'Yes';
         var attendingAquarium = $(this).find('.attending-aquarium').val() == 'Yes';
         var allergies = $(this).find('.allergies').val();
@@ -44,6 +45,7 @@ $('document').ready(function() {
   				data['first_name_' + dataIndex] = firstName;
   				data['last_name_' + dataIndex] = lastName;
   				data['attending_' + dataIndex] = attending;
+          data['shuttle_' + dataIndex] = shuttle;
           data['attending_beach_' + dataIndex] = attendingBeach;
           data['attending_aquarium_' + dataIndex] = attendingAquarium;
           data['allergies_' + dataIndex] = allergies;
@@ -62,6 +64,7 @@ $('document').ready(function() {
           var firstName = $(this).find('.first-name').val();
           var lastName = $(this).find('.last-name').val();
           var attending = $(this).find('.attending').val();
+          var shuttle = $(this).find('.shuttle').val()
           var attendingBeach = $(this).find('.attending-beach').val();
           var attendingAquarium = $(this).find('.attending-aquarium').val();
           var allergies = $(this).find('.allergies').val();
@@ -70,6 +73,7 @@ $('document').ready(function() {
               '<td>' + firstName + '</td>' +
               '<td>' + lastName + '</td>' +
               '<td>' + attending + '</td>' +
+              '<td>' + shuttle + '</td>' +
               '<td>' + attendingBeach + '</td>' +
               '<td>' + attendingAquarium + '</td>' +
               '<td>' + allergies + '</td>'

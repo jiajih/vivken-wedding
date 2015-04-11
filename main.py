@@ -35,6 +35,7 @@ class Guest(ndb.Model):
   first_name = ndb.StringProperty()
   last_name = ndb.StringProperty()
   attending = ndb.BooleanProperty()
+  shuttle = ndb.BooleanProperty()
   attending_beach = ndb.BooleanProperty()
   attending_aquarium = ndb.BooleanProperty()
   allergies = ndb.TextProperty()
@@ -70,6 +71,7 @@ class RsvpHandler(webapp2.RequestHandler):
       guest.first_name = self.request.get('first_name_' + str(guest_index))
       guest.last_name = self.request.get('last_name_' + str(guest_index))
       guest.attending = self.request.get('attending_' + str(guest_index)) == 'true'
+      guest.shuttle = self.request.get('shuttle_' + str(guest_index)) == 'true'
       guest.attending_beach = self.request.get('attending_beach_' + str(guest_index)) == 'true'
       guest.attending_aquarium = self.request.get('attending_aquarium_' + str(guest_index)) == 'true'
       guest.allergies = self.request.get('allergies_' + str(guest_index))

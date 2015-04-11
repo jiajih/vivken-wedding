@@ -37,6 +37,7 @@
 	  			<th>First name</th>
 	  			<th>Last name</th>
 	  			<th>Attending?</th>
+	  			<th>Shuttle?</th>
 	  			<th>Attending beach day?</th>
 	  			<th>Attending welcome dinner?</th>
 	  			<th>Food allergies</th>
@@ -52,6 +53,7 @@
 							<td>{{ guest.first_name }}</td>
 							<td>{{ guest.last_name }}</td>
 							<td>{% if guest.attending %}Yes{% else %}No{% endif %}</td>
+							<td>{% if guest.shuttle is none%}&mdash;{% elif guest.shuttle %}Yes{% else %}No{% endif %}</td>
 							<td>{% if guest.attending_beach %}Yes{% else %}No{% endif %}</td>
 							<td>{% if guest.attending_aquarium %}Yes{% else %}No{% endif %}</td>
 							<td>{{ guest.allergies }}</td>
