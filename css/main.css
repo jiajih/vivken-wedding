@@ -1,8 +1,8 @@
 @font-face {
-	font-family: 'orator';
+	font-family: "orator";
     src: url('/fonts/orator-webfont.eot');
     src: url('/fonts/orator-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/orator-webfont.svg#orator_webfont') format('svg')
+    url('/fonts/orator-webfont.svg#orator_webfont') format('svg'),
     url('/fonts/orator-webfont.woff') format('woff'),
     url('/fonts/orator-webfont.woff2') format('woff2'),
     url('/fonts/orator-webfont.ttf') format('truetype');
@@ -21,6 +21,7 @@ body {
 	padding: 0;
 }
 
+html,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'orator';
   color: #333;
